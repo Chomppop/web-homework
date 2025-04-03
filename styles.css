@@ -1,0 +1,98 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* เปลี่ยนฟอนต์เป็น Khmer */
+    background-image: url('https://cdn.pixabay.com/photo/2019/06/29/04/02/buffalo-4305380_1280.jpg'); /* ตั้งค่ารูปภาพเป็นพื้นหลัง */
+    background-size: cover; /* ปรับให้รูปภาพครอบคลุมทั้งหน้า */
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    
+    background-color: #0d1b66;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #f3ffac;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgb(96, 98, 114);
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background: #353741;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px rgba(68, 68, 68, 0.2);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+ttextarea {
+    resize: vertical;
+    height: 80px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    background-color: #ffeb3b;
+    color: #000;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #fbc02d;
+}

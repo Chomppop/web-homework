@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="testjs.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="user.html">User Management</a></li>
+                <li><a href="testjs.html">Test JS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Register Form</h2>
+        
+        <div class="form-group">
+            <label for="firstname">ชื่อ:</label>
+            <input type="text" id="firstname" name="firstname">
+        </div>
+        
+        <div class="form-group">
+            <label for="lastname">นามสกุล:</label>
+            <input type="text" id="lastname" name="lastname">
+        </div>
+        
+        <div class="form-group">
+            <label for="age">อายุ:</label>
+            <input type="number" id="age" name="age" min="0" max="150">
+        </div>
+        
+        <div class="form-group">
+            <label>เพศ:</label>
+            <div class="gender-options">
+                <label><input type="radio" name="gender" value="ชาย"> ชาย</label>
+                <label><input type="radio" name="gender" value="หญิง"> หญิง</label>
+                <label><input type="radio" name="gender" value="ไม่ระบุ"> ไม่ระบุ</label>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label>งานอดิเรก:</label>
+            <div class="hobby-options">
+                <label><input type="checkbox" name="interest" value="อ่านหนังสือ"> อ่านหนังสือ</label>
+                <label><input type="checkbox" name="interest" value="ดูหนัง"> ดูหนัง</label>
+                <label><input type="checkbox" name="interest" value="ฟังเพลง"> ฟังเพลง</label>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="description">คำอธิบายตนเอง:</label>
+            <textarea id="description" name="description"></textarea>
+        </div>
+        
+        <div id="message" class="message">ยินดีที่ได้รู้จัก</div>
+        
+        <button onclick="submitData()" class="btn">ส่งข้อมูล</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

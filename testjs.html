@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="testjs.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test JS</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="user.html">User Management</a></li>
+                <li><a href="testjs.html">Test JS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Test JavaScript</h2>
+
+        <div class="form-group">
+            <label for="testInput">Test Input:</label>
+            <input type="text" id="testInput" name="testInput">
+        </div>
+
+        <div class="form-group">
+            <label for="testNumber">Test Number:</label>
+            <input type="number" id="testNumber" name="testNumber" min="0" max="100">
+        </div>
+
+        <div class="form-group">
+            <label>Test Options:</label>
+            <div class="hobby-options">
+                <label><input type="checkbox" name="testInterest" value="Option 1"> Option 1</label>
+                <label><input type="checkbox" name="testInterest" value="Option 2"> Option 2</label>
+                <label><input type="checkbox" name="testInterest" value="Option 3"> Option 3</label>
+            </div>
+        </div>
+
+        <button onclick="testFunction()" class="btn">Submit Test</button>
+
+        <div id="message" class="message">Please enter test data.</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="testjs.js"></script>
+</body>
+</html>

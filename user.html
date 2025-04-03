@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="testjs.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="user.html">User Management</a></li>
+                <li><a href="testjs.html">Test JS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>User Management</h2>
+
+        <div class="form-group">
+            <label for="username">ชื่อผู้ใช้:</label>
+            <input type="text" id="username" name="username">
+        </div>
+
+        <div class="form-group">
+            <label for="email">อีเมล:</label>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <div class="form-group">
+            <label for="role">บทบาท:</label>
+            <select id="role" name="role">
+                <option value="admin">Admin</option>
+                <option value="user">User</option>
+                <option value="guest">Guest</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="status">สถานะ:</label>
+            <input type="checkbox" id="status" name="status">
+            <label for="status">Active</label>
+        </div>
+
+        <button onclick="submitUserData()" class="btn">บันทึกข้อมูล</button>
+
+        <div id="message" class="message">กรุณากรอกข้อมูลผู้ใช้</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="user.js"></script>
+</body>
+</html>
